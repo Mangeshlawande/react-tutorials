@@ -1,0 +1,11 @@
+
+
+touch commands.txt
+
+npm i express
+
+npm init
+
+npm run dev
+
+ls 

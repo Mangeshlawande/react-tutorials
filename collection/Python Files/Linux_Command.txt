@@ -1,0 +1,190 @@
+1. ls  --> List all directories present in the system,
+
+CLI --> command line interface
+GUI --> graphical user interface 
+file system 
+
+2. pwd -->print working directory
+current working directory(parent) return absolute path 
+tree structure  (/) -->root node
+
+3. cd /
+cd --> change directory
+
+4. $ --> regular user
+
+absolute path  => /bin (with /)
+relative path =>  bin (without /)
+
+5. cd .. => return back 
+6. mkdir Mango --> make new directory 
+7. touch new.txt -->create a blank file 
+8. mv 1.txt this/  --> move file from folder
+9. cp     --> copy command 
+cp /home/mangesh/Downloads/Mango/56.txt /home/mangesh/
+ -----------------------------------------------------------------------------------------------
+    User in Linux 
+ --------------------------------------------------------------------------------------------
+ 1. Regular user -> home directory (all permission(r,w e) in own system ), he can't access in others home directory
+    
+2. Root User/super User/ Admin -> full access, he can access any home directory 
+
+sudo = root , eg. ->sudo mkdir
+sudo cmd use wisely, It is used for super user 
+sudo su --> it becomes super user after word
+
+3. service user --> provide services  like apache server 
+
+-------------------------------------------------------------------------------------
+Absolute Path VS Relative Path
+-------------------------------------------------------------------------------------
+                        /   [Root]              
+        [bin]       [apps]              [etc.,]
+    f1          fo1
+            f2       fo2
+
+pwd 
+cd fo2  ==> relative path
+cd /bin/fo1 ==> Absolute path, start with /(slash)
+-----------------------------------------------------------------------------------------------
+
+sudo apt.get update -> with help of apt.get it  upadte  the list of softwares
+
+sudo apt.get upgrade -> install updated softwares
+
+sudo apt upgrade -> (above version 18)
+
+ls -r  ==> list all directories nested folders
+
+r ==> recursively fetch all directories
+
+for hidden files
+  start with . 
+listing hidden files 
+3. ls -a
+
+4. ls -lart
+
+5. history  --> listed all recent commands
+    2  sudo snap install chrome
+    3  sudo  brave
+    4  sudo snap install brave
+    5  python --version
+    6  sudo apt install
+    7  sudo apt upgrade
+    8  python3 --version
+    9  suddo apt install python3
+   10  sudo apt install python3
+   11  restart
+   12  clear
+   13  close
+   14  python main.py
+   15  python3 main.py
+   16  python3 --version
+   17  main.py
+   18  python -u "/home/mangesh/Public/Python Files/main.py"
+   19  clear
+   20  python -u "/home/mangesh/Public/Python Files/main.py"
+   21  python3 main.py
+   22  python -u "/home/mangesh/Public/Python Files/main.py"
+   23  sudo apt install python
+   24  clear
+   25  ls
+   26  pwd
+   27  cd /
+   28  ls
+   29  cd bin
+   30  ls
+   31  cd ..
+   32  cd Down
+   33  cd Download
+   34  cd Downloads
+   35  pwd
+   36  ls
+   37  clear
+   38  ls
+   39  pwd
+   40  ls
+   41  cd Downloads
+   42  cd Download
+   43  cd Downloadcd
+   44  cd ..
+   45  cd Downloads/
+   46  mkdir Mango
+   47  cd Mango
+   48  mkdir this
+   49  pwd
+   50  touch 1.txt
+   51  touch 2.txt
+   52  mv 1.txt this/
+   53  cp 2.txt this/
+   54  pwd
+   55  touch 56.txt
+   56  cp /home/mangesh/Downloads/Mango/56.txt /
+   57  cp /home/mangesh/Downloads/Mango/56.txt /home/mangesh/
+   58  ls -r
+   59  touch .harry.txt
+   60  ls
+   61  ls -a
+   62  ls -lart
+   63  clear
+   64  history
+mangesh@mangesh-HP-245-G8-Notebook-PC:~/Downloads/Mango$ ^C
+mangesh@mangesh-HP-24
+
+
+5. echo or printf "anything" --> print line in terminal
+
+touch harry.txt
+mangesh@mangesh-HP-245-G8-Notebook-PC:~/Downloads/Mango$ ls
+2.txt  56.txt  harry.txt  this
+mangesh@mangesh-HP-245-G8-Notebook-PC:~/Downloads/Mango$ touch HARRY.txt
+mangesh@mangesh-HP-245-G8-Notebook-PC:~/Downloads/Mango$ ls
+2.txt  56.txt  harry.txt  HARRY.txt  this
+-> by using case sensitivity we can create multiple Files
+
+
+installing server 
+-> sudo apt install apache2
+-> 
+
+6. ls -l ->>
+-rw-rw-r-- 1 mangesh mangesh    0 Jul 19 14:02 2.txt
+-rw-rw-r-- 1 mangesh mangesh    0 Jul 19 14:10 56.txt
+-rw-rw-r-- 1 mangesh mangesh    0 Jul 19 15:00 harry.txt
+-rw-rw-r-- 1 mangesh mangesh    0 Jul 19 15:01 HARRY.txt
+drwxrwxr-x 2 mangesh mangesh 4096 Jul 19 14:09 this
+
+d -> directory
+User - group - others
+-rw  - rw    - r  
+read -write -execute 
+rwe-rwe-rwe
+
+==> use chmod calculator change the mode of file
+set permission
+        user  |  Group  | Public
+read = 400    |  40     |   4
+write = 600   |   20    |   2
+execute = 700 |    10   |   1
+
+ps c->md list all processes
+ps -a ->display background processes
+top  -> resources consume 
+
+ps -ef
+
+kill process ID->kill process
+vim text editor --> it helps to change the content in the files
+
+$ for regular user
+# for sudo user
+
+apt install vim
+ls, vim harry.txt 
+i for insert
+type
+esc for escape
+:q -> exit without save
+:wq -> save & exit 
+vim harry.txt

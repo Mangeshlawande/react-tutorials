@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table{
+            /* width:100%; */
+            border-collapse: collapse;
+        }
+
+        td,th {
+            border:1px solid black;
+            padding: 10px;
+        }
+
+        tr {
+            background-color: #313131;
+            color: white;
+
+        }
+        tr:nth-child(even) {
+            background-color:#b9b9b9;
+        }
+    </style>
+</head>
+<body>
+    <table style="width:100%;">
+        <colgroup>
+        <col span="2" style="background-color: aqua;">
+        </colgroup>
+
+        <tr>
+            <th>Country</th>
+            <th>Country Code </th>
+            <th>Email </th>
+        </tr>
+        <tr>
+            <td>India</td>
+            <td>IN</td>
+            <td>India@goolgle.com</td>
+        </tr>
+        <tr>
+            <td>United Kingdom</td>
+            <td>UK</td>
+            <td>UK@goolgle.com</td>
+        </tr>
+        <tr>
+            <td>United State of America</td>
+            <td>USA</td>
+            <td>USA@goolgle.com</td>
+        </tr>
+        <tr>
+            <td>Japan</td>
+            <td>JP</td>
+            <td>JP@goolgle.com</td>
+        </tr>
+    </table>
+    <hr>
+    <p>colspan , rowspan </p>
+    <table>
+        <tr>
+            <th colspan="2">Country</th>
+            <td>India</td>
+            <td>United Kingdom</td>
+            <td>Jpan</td>
+        </tr>
+        <tr>
+            <th>Code</th>
+            <td>IN</td>
+            <td>UK</td>
+            <td>JP</td>
+        </tr>
+    </table>
+</body>
+</html>

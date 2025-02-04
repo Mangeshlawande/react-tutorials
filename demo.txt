@@ -1,0 +1,110 @@
+
+01 basic react application
+
+load page which is index.html
+It is called Single page application 
+
+    DOM  :: All elements comes from dom 
+    dom manipulation 
+
+manifest.json for metatags 
+ index.html
+    <noscript> 
+    <div>
+
+in src folder entry file is index.js file
+    library 
+     react :: core foundational library
+     react-dom :: To manipulate dom , it is implementation on web 
+
+    react create their own dom called virtual dom , it compare with main dom , and change only specific elements 
+    dom :: Tree like structure 
+   const root =  ReactDOM.createRoot(document.getElementById('root'))
+   root.render(
+    <React.StrictMode>
+        <App /> //:: html in javascript called jsx;
+    </React.StrictMode>
+   );
+   give fascility to build custom tags 
+
+
+React.StrictMode :: It is developement specific mode 
+    
+    App is a function which return a tag 
+
+01 vite react application
+
+    what is virtual dom 
+    what is state management 
+    what is state 
+    what is props
+
+    =================
+    1. introduction to react   vsc, nodejs
+    2. class and functional component & jsx  REAct application flow 
+    3. what is state and props
+    4. event handling 
+    5. how to fetch data from server and display in react (console log)
+    6. dynamically rendering data in the view 
+    7.  React.Fragment 
+    8. React (client) + fetching data from external API  (Axios) (fetch)- Ajax
+    09. React Routing  (React-Router-Dom )
+    10. reusable components
+    11. passing the data between components 3 ways 
+    12. context API
+    13.life cycle method in class components (10) - hooks -3
+    14. list maps keys 
+    15. conditional rendering 
+    16. Integrate with other library (bootstrap , react-router-dom, axios, redux )
+    18. redux in react 
+    19. React + redux(client) + fetching    Data External Api
+    20 . introduction to hooks in in reactjs    
+    21.useState()
+    22. useEffect()
+    23.useRef()
+    24.useReducer()
+    25. useContext()
+    26.React Hooks client + fetching data external api  
+    27. redux using  react hooks
+    28. github search project    
+
+
+=========================================================
+what is library 
+react is lib or framework 
+what is react and purpose of react 
+what is component 
+in how many ways u can create components
+what is state and how to update state 
+what happens when useState() is called?
+how to create parent child relations 
+what is props   and why we used props 
+what is application flow 
+what is diff between    render  in react and render in react dom    
+in how many ways we can pass the data  from parent to child  
+in how many ways u can manage state in react application        
+what is context api  and why do we use context api 
+which kind problem will be solve using context api  
+what is Axios anaything alternate  to axios     ? fetch ()  
+how to implement routinig the react application 
+why we have to use redux 
+what is reducer
+how redux store is available  to reacte app ?
+what pattern ur connect () is going to the follow  (HOC) ?
+what is redux Logger How to call the reducer
+can u explain redux flow 
+what are hooks
+why hooks were introduced 
+what is use effect or how it will  maintain 3 lifecycle method 
+what is the use of use context()
+how can u create  reference for element in the functional component ? (useRef())
+what is diff between useState and useReducer
+what is the use of useCallback() and useMemo() 
+What is HOC(Higher Order component)
+what are lisft and keys ()?
+How to use redux in functional components 
+what is redux thunk and redux saga 
+how to test ur components ? 
+
+# Custom React 
+    

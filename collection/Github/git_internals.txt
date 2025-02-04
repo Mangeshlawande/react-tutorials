@@ -1,0 +1,66 @@
+unique Id(SHA)
+
+2 depends on 1st hash 
+
+cmd :
+
+git Infra stracture : object Based
+kind of DB;
+
+Git Snapshots: represent a specific code, including 
+all the file and folders that were present at that time
+
+
+3 musketeers off git : (internal storage )
+
+* commit Object (reference to tree )
+* tree Object (reference to blob )
+* Blob Object (A code need to save )
+
+
+
+COMMIT Object:
+Each commit in the project is stored in .git folder
+ in the form of a commit object. A commit object contains the following information:
+
+Tree Object
+Parent Commit Object
+Author
+Committer
+Commit Message
+
+Tree Object
+Tree Object is a container for all the files and folders in the project. It contains the following information:
+
+File Mode
+File Name
+File Hash
+Parent Tree Object
+Everything is stored as key-value pairs in the tree object. The key is the file name and the value is the file hash.
+
+
+Blob Object
+Blob Object is present in the tree object and contains the actual file content. This is the place where the file content is stored.
+
+Git and Github
+
+
+Branches in git
+Branches are a way to work on different versions of a project at the same time. They allow you to create a separate line of development that can be worked on independently of the main branch. This can be useful 
+when you want to make changes to a project without affecting the main branch or when you want to work on a new feature or bug fix.
+Some developers can work on Header, some can work on Footer, some can work on Content, and some can work on Layout. This is a good example of how branches can be used in git.
+
+
+HEAD in git
+The HEAD is a pointer to the current branch that you are working on. It points to the latest commit in the current branch. When you create a new branch, it is automatically set as the HEAD of that branch.
+
+the default branch used to be master, but it is now called main. There is nothing special about main, it is just a convention.
+
+git branch
+git branch bug-fix
+git switch bug-fix
+git switch -c dark-mode(creted another branch)
+git checkout orange-mode (mostly used)
+git checkout bug-fix 
+
+git merge bug-fix (fast forward merge)
